@@ -139,7 +139,7 @@ function readTxt(usuario,contrasena){
 
 
 function abrirRedSocial() {
-    var redSocial = "https://www.instagram.com/cubo_2023/?igshid=ZDdkNTZiNTM%3D"
+    var redSocial = "https://instagram.com/ortizcardona27?igshid=ZDdkNTZiNTM= "
     alert("Welcome to our instagram, here you can contact us and we will give you a username and password.");
      window.location = redSocial;    
 }x
