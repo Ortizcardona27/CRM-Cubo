@@ -22,8 +22,6 @@
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <body>
-
-
   <div class="logo">
     <a href="index.html">
       <img class="imagen" src="./img/right.png" height="80">
@@ -44,7 +42,7 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home
+                  <a class="nav-link active" href="home.html">Home
                     <span class="visually-hidden">(current)</span>
                   </a>
                 </li>
@@ -68,44 +66,27 @@
       </div>
     </div>
 
-  </header>
+  </header> 
 
   <div class="contenido-principal">
-    <img src="./img/LogoCubo.png" height="250">
-    <hr width=100% size="7" noshade="noshade">
+    <img src="img/right.png" height="250">
 
-    <div class="columna">
-      <a href="cases.html">
-        <img class="imagen" src="./img/usuarios.png" height="150">
-      </a>
-      <a class="nav-link" href="cases.html">
-        <button class="button-home">CASES</button>
-      </a>
-    </div>
-
-    <div class="columna">
-      <a href="index.html">
-        <img class="imagen" src="./img/lista.png" height="150">
-      </a>
-      <a class="nav-link" href="register.html">
-        <button class="button-home">REGISTER</button>
-     </a>
-    </div>
-
-    <div class="columna">
-      <a href="register.html">
-        <img class="imagen" src="./img/documento.png" height="150">
-      </a>
-      <a class="nav-link" href="customers.html">
-        <button class="button-home">CUSTOMERS</button>
-     </a>
-    </div>
+    <h2>Username: </h2>
+    <input type="text" id="usuario" placeholder="Username"></input>
+    <p></p>
+    <h2>Password: </h2>
+    <input type="password" id="contrasena" placeholder="*******"></input>
+    <p></p>
+    <button onclick="readTxt(document.getElementById('usuario'),document.getElementById('contrasena'))"
+      id="button-login">Login</button>
+    <button onclick="abrirRedSocial()" id="button-login">Contact Us</button>
 
   </div>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 <footer class="footer">
   <div class="contenedor">
-
     <p class="footer-text">
       © 2023 CUBO Telecomunications - All rights reserved.
     </p>

@@ -126,7 +126,7 @@ function readTxt(usuario,contrasena){
                 }
                 if(es_usuario){
                     alert("Welcome to CUBO.")
-                    window.location = "index.html";
+                    window.location = "home.html";
                 }else{
                     alert("You have entered the wrong username and/or password, try again.")
                 }
