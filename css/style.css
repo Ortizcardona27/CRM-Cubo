@@ -198,6 +198,14 @@ a {
 
 }
 
+.footer-text-index{
+    background-color: #243853;
+    color: white;
+    text-align: center;
+    padding-bottom: 3%;
+    font-family: 'Lato' sans-serif;
+
+}
 .strong1 {
     color: #FFD700;
 }
