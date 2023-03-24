@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-profile.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 <link rel="website icon" href="img/LogoCubo.png">
 
 <head>
@@ -22,7 +24,9 @@
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <body>
- <div class="logo">
+
+
+  <div class="logo">
     <a href="home.html">
       <img class="imagen" src="./img/right.png" height="80">
     </a>
@@ -69,29 +73,48 @@
   </header>
 
   <div class="contenido-principal">
-    <img src="./img/LogoCubo.png" height="250">
-    <hr width=100% size="7" noshade="noshade">
-
-    <div class="columna">
-      <a href="login.html">
-        <img class="imagen" src="./img/usuarios.png" height="150">
-      </a>
-      <a class="nav-link" href="Login.html">Customers</a>
-    </div>
-
-    <div class="columna">
-      <a href="login.html">
-        <img class="imagen" src="./img/lista.png" height="150">
-      </a>
-      <a class="nav-link" href="Login.html">Customers</a>
-    </div>
-
-    <div class="columna">
-      <a href="login.html">
-        <img class="imagen" src="./img/documento.png" height="150">
-      </a>
-      <a class="nav-link" href="Login.html">Register</a>
-    </div>
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <div class="perfil-usuario-avatar">
+                    <img src="img/avatar.png" alt="img-avatar">
+                    <button type="button" class="boton-avatar">
+                        <i class="far fa-image"></i>
+                    </button>
+                </div>
+                <button type="button" class="boton-portada">
+                    <i class="far fa-image"></i> 
+                    Change background
+                </button>
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h3 class="titulo">Sebastian Ortiz Cardona</h3>
+                <p class="texto">
+                  I am Sebastián, I am 23 years old and I live in Caldas-Antioquia. I am a computer engineering student, currently in the seventh semester of my degree.
+                  I like soccer and web development.</p>
+            </div>
+            <div class="perfil-usuario-footer">
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-map-signs"></i> Username: Ortizcardona27</li>
+                    <li><i class="icono fas fa-phone-alt"></i> Cellphone: 3157435886</li>
+                    <li><i class="icono fas fa-briefcase"></i> Works at: CUBO</li>
+                    <li><i class="icono fas fa-building"></i> Position: Operator</li>
+                </ul>
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-map-marker-alt"></i> Location: Caldas/Antioquia</li>
+                    <li><i class="icono fas fa-calendar-alt"></i> Birthdate: 27/11/99</li>
+                    <li><i class="icono fas fa-user-check"></i> Status: Active</li>
+                    <li><i class="icono fas fa-share-alt"></i> Social Networks: Fb - Tw - Ig</li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/Sebas127" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
+                <a href="https://twitter.com/ortizcardona27" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>
+                <a href="https://www.instagram.com/ortizcardona.21/" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
+            </div>
+        </div>
 
   </div>
 </body>
