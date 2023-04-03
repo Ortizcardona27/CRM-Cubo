@@ -92,17 +92,26 @@ body {
     display: block;
     background: white;
     height: 730px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     margin-bottom: 1rem;
     float: none;
 }
 
+.contenido-edit-case {
+    text-align: center;
+    display: block;
+    background: white;
+    height: 730px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    float: none;
+}
 
 .columna {
     width:33%;
     float:left;
-    padding: 70px;
   }
 
   .columna-casos {
@@ -268,6 +277,12 @@ a {
  
 }
 
+.container-cases {
+    background: white;
+    width: 50%;
+    float: left;
+}
+
 .centrar-texto {
     text-align: center;
     width:50%;
@@ -277,12 +292,16 @@ a {
 
 .centrar-texto1 {
     text-align: center;
-    width:179%;
+    width:100%;
+}
+
+.centrar-texto-List-Cases {
+    text-align: center;
     padding: 35px;
 }
 
 .nota{
-    text-align: left    ;
+    text-align: left;
 }
 
 .container4 {
@@ -539,4 +558,23 @@ label {
     font-size: 15px;
     padding: 8px;
     float: inline-start;
+  }
+
+  #grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+  }
+
+  #grid-container-customers {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+  }
+
+  .cell {
+    background-color: white;
+    border: 1px solid black;
   }

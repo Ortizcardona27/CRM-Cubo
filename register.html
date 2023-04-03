@@ -7,11 +7,10 @@
 <link rel="website icon" href="img/LogoCubo.png">
 
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register | Cubo</title>
+  <title>Cases Form | Cubo</title>
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -29,7 +28,6 @@
   </div>
   <header class="header">
     <div class="contenedor">
-
       <div class="barra">
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
           <div class="container-fluid">
@@ -65,35 +63,64 @@
         </nav>
       </div>
     </div>
-
   </header>
 
   <div class="contenido-principal">
-    <img src="./img/LogoCubo.png" height="250">
-    <hr width=100% size="7" noshade="noshade">
+    <div class="v-line1"> </div>
+    <h1 class="centrar-texto">Register user</h1>
+    <div class="container-cases">
 
-    <div class="columna">
-      <a href="login.html">
-        <img class="imagen" src="./img/usuarios.png" height="150">
-      </a>
-      <a class="nav-link" href="Login.html">Customers</a>
+      <form action="" id="formulario">
+        <div class="row">
+          <div class="col">
+            <label for="user">username *</label>
+            <input type="text" class="form1" id="user" maxlength="60">
+          </div>
+
+          <div class="col">
+            <label for="rol">Role *</label>
+            <select id="rol" class="form1">
+              <option></option>
+              <option>Administrator</option>
+              <option>Operator</option>
+            </select>
+          </div>
+        </div>
+
+        <p></p>
+        <p></p>
+
+        <div class="row">
+          <div class="col">
+            <label for="nameuser">Name *</label>
+            <input type="text" class="form1" id="nameuser">
+          </div>
+          <div class="col">
+            <label for="emailuser">E-Mail *</label>
+            <input type="email" class="form1" placeholder="example@gmail.com" id="emailuser"
+              pattern=".+@beststartupever\.com">
+          </div>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <button onclick="RegisterUser(document.getElementById('user'),document.getElementById('rol'),
+                document.getElementById('nameuser'),document.getElementById('emailuser'))" type="button"
+          class="button-cases-form" id="ingresar">
+          SEND</button>
+      </form>
     </div>
 
-    <div class="columna">
-      <a href="login.html">
-        <img class="imagen" src="./img/lista.png" height="150">
-      </a>
-      <a class="nav-link" href="Login.html">Customers</a>
+    <div class="columna-casos">
+      <h1 class="centrar-texto1">NOTES</h1>
+      <p class="nota">- Fields with (*) are required.</p>
+      <p class="nota">- By clicking "I accept terms and conditions" &nbsp;&nbsp; you agree to our terms and
+        conditions.</p>
     </div>
-
-    <div class="columna">
-      <a href="login.html">
-        <img class="imagen" src="./img/documento.png" height="150">
-      </a>
-      <a class="nav-link" href="Login.html">Register</a>
-    </div>
-
   </div>
+
+  <script src=".js/register.js"></script>
 </body>
 <footer class="footer">
   <div class="contenedor">

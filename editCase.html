@@ -7,11 +7,10 @@
 <link rel="website icon" href="img/LogoCubo.png">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cases | Cubo</title>
+    <title>Cases Form | Cubo</title>
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -29,7 +28,6 @@
     </div>
     <header class="header">
         <div class="contenedor">
-
             <div class="barra">
                 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
                     <div class="container-fluid">
@@ -66,30 +64,68 @@
                 </nav>
             </div>
         </div>
-
     </header>
 
-    <div class="contenido-principal">
+    <div class="contenido-edit-case">
+        <h1 class="centrar-texto-List-Cases">Edit case</h1>
+        <div class="container-edit-case">
 
-        <div class="columna1">
-            <a href="cases_form.html">
-                <img class="imagen" src="./img/usuarios.png" height="250">
-            </a>
-            <h2>Select this button to create a new case.</h2>
-            <a href="cases_form.html"><input type="button" id="button-cases" value="CREATE CASES"></a>
-        </div>
+            <form action="" id="formulario">
+                <div class="row">
+                    <div class="col">
+                        <label for="caseNumber">Case number</label>
+                        <input type="text" class="form1" id="caseNumber" maxlength="60">
+                    </div>
 
-        <div class="v-line"> </div>
+                    <div class="col">
+                        <label for="subjectEdit">Subject</label>
+                        <input type="text" class="form1" id="subjectEdit" maxlength="60">
+                    </div>
+                </div>
 
-        <div class="columna1">
-            <a href="login.html">
-                <img class="imagen" src="./img/lista.png" height="250">
-            </a>
-            <h2>Select this button to see the list of cases.</h2>
-            <a href="ListCases.html"><input type="button" id="button-cases" value="SEARCH CASES "></a>
+                <p></p>
+                <p></p>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="customer">Customer</label>
+                        <input type="text" class="form1" id="customer">
+                    </div>
+
+                    <div class="col">
+                        <label for="state">State</label>
+                        <select id="state" class="form1">
+                            <option></option>
+                            <option>Assigned</option>
+                            <option>Closed</option>
+                            <option>In progress</option>
+                        </select>
+                    </div>
+                </div>
+                <p></p>
+                <p></p>
+                <div class="row">
+                    <div class="col">
+                        <label for="description">Description</label>
+                        <input type="phone" class="form1" id="description" maxlength="10">
+                    </div>
+
+                    <div class="col">
+                        <label for="attendant">Attendant</label>
+                        <input type="text" class="form1" id="attendant">
+                    </div>
+                </div>
+                <p></p>
+                <p></p>
+                <button style="margin-top: 80px;" onclick="RegisterCase(document.getElementById('caseNumber'),document.getElementById('subjectEdit'),
+                document.getElementById('customer'),document.getElementById('state'),document.getElementById('description'),
+                document.getElementById('attendant'))" type="button" class="button-cases-form" id="ingresar">
+                    SEND</button>
+            </form>
         </div>
     </div>
-    </div>
+
+    <script src=".js/cases.js"></script>
 </body>
 <footer class="footer">
     <div class="contenedor">

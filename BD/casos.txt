@@ -1,0 +1,4 @@
+#|Asunto|Cliente|Estado|Fecha creación|Fecha cierre|Encargado
+1|Problema con impresión|Tigo|Asignado|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Joham Hernández
+2|Problema con minutos|Tigo|Cerrado|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Sebastian Ortiz
+3|Problema con llamadas|Tigo|En Proceso|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Marco 

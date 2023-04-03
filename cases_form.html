@@ -7,7 +7,6 @@
 <link rel="website icon" href="img/LogoCubo.png">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +28,6 @@
     </div>
     <header class="header">
         <div class="contenedor">
-
             <div class="barra">
                 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243853;">
                     <div class="container-fluid">
@@ -66,7 +64,6 @@
                 </nav>
             </div>
         </div>
-
     </header>
 
     <div class="contenido-principal">
@@ -75,17 +72,15 @@
         <div class="container-cases">
 
             <form action="" id="formulario">
-
-
                 <div class="row">
                     <div class="col">
-                        <label for="name">Subject *</label>
+                        <label for="subject">Subject *</label>
                         <input type="text" class="form1" id="subject" maxlength="60">
                     </div>
 
                     <div class="col">
-                        <label for="case-type">Case Type *</label>
-                        <select name="favoriteOnly" class="form1">
+                        <label for="caseType">Case Type *</label>
+                        <select id="caseType" class="form1">
                             <option></option>
                             <option>1</option>
                             <option>2</option>
@@ -102,50 +97,42 @@
                         <label for="name">Name *</label>
                         <input type="text" class="form1" id="name">
                     </div>
-
                     <div class="col">
-                        <label for="tel">Cellphone *</label>
+                        <label for="phone">Cellphone *</label>
                         <input type="phone" class="form1" id="phone" maxlength="10">
                     </div>
-
                 </div>
-
                 <p></p>
                 <p></p>
-
-
                 <div class="row">
                     <div class="col">
-                        <label for="emailAdress">E-Mail *</label>
+                        <label for="email">E-Mail *</label>
                         <input type="email" class="form1" placeholder="example@gmail.com" id="email"
                             pattern=".+@beststartupever\.com">
                     </div>
-
                     <div class="col">
-                        <input type="checkbox" id="cbox1" value="checkbox" required>
-                        <label for="cbox1">I accept terms and conditions.</label>
+                        <input type="checkbox" id="acceptTerms" value="checkbox" required>
+                        <label for="acceptTerms">I accept terms and conditions.</label>
                     </div>
-
                 </div>
-
-                    <p></p>
-                    <p></p>
-                   
-                    <button type="button" class="button-cases-form" id="ingresar">SEND</button>
-                   
+                <p></p>
+                <p></p>
+                <button onclick="RegisterCase(document.getElementById('subject'),document.getElementById('caseType'),
+                document.getElementById('name'),document.getElementById('phone'),document.getElementById('email'))" 
+                type="button" class="button-cases-form" id="ingresar">
+                SEND</button>
             </form>
-            
         </div>
 
         <div class="columna-casos">
             <h1 class="centrar-texto1">NOTES</h1>
             <p class="nota">- Fields with (*) are required.</p>
-            <p class="nota">- By clicking "I accept terms and conditions" &nbsp;&nbsp; you agree to our terms and conditions.</p>
+            <p class="nota">- By clicking "I accept terms and conditions" &nbsp;&nbsp; you agree to our terms and
+                conditions.</p>
         </div>
-
     </div>
 
-    <script src="js/script.js"></script>
+    <script src=".js/cases.js"></script>
 </body>
 <footer class="footer">
     <div class="contenedor">
@@ -155,5 +142,4 @@
         </p>
     </div>
 </footer>
-
 </html>

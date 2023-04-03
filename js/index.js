@@ -1,5 +1,5 @@
 function ValidarID(ID) {
-    if (ID.length>0) {
+    if (ID.length > 0) {
         if (parseInt(ID) > 0) {
             return true;
         } else {
@@ -11,24 +11,24 @@ function ValidarID(ID) {
         return false;
     }
 }
-function validarDisponibilidad(disponibilidad,cantidad){
-    if(cantidad>0){
+function validarDisponibilidad(disponibilidad, cantidad) {
+    if (cantidad > 0) {
         return "Disponible";
     }
 
 }
 
-function validarCantidad(cantidad){
-    if(cantidad>0){
+function validarCantidad(cantidad) {
+    if (cantidad > 0) {
         return cantidad;
     }
-    else{
-        return cantidad="No dispobible"
+    else {
+        return cantidad = "No dispobible"
     }
 }
 
 function ValidarPrecio(precio) {
-    if (precio>0) {
+    if (precio > 0) {
         return true;
     } else {
         return false;
@@ -44,47 +44,47 @@ function ValidarTexto(texto) {
 }
 
 var cont = 1;
-$(function() {
-    $("#nombre").blur(function(e) {
+$(function () {
+    $("#nombre").blur(function (e) {
         var nombre = $("#nombre").val();
         ValidarTexto(nombre);
     });
-    
-    $("#precio").blur(function () { 
+
+    $("#precio").blur(function () {
         var precio = parseFloat($("#precio").val());
         if (!ValidarPrecio(precio)) {
             alert("El precio debe ser mayor a 0");
         }
     });
 
-    $("#cantidad").blur(function () { 
+    $("#cantidad").blur(function () {
         var cantidad = $("#cantidad").val();
         validarCantidad(cantidad);
     });
 
 
 
-    if (precio>0) {
+    if (precio > 0) {
         $('#ingresar').attr("disabled", true);
-    }else{
+    } else {
         $('#ingresar').attr("disabled", false);
     }
-    const form=document.getElementById("formulario");
-    $("#ingresar").click(function(e) {
-        form.addEventListener("submit", function(event){
+    const form = document.getElementById("formulario");
+    $("#ingresar").click(function (e) {
+        form.addEventListener("submit", function (event) {
             event.preventDefault();
         })
-        
+
         var ID = $("#ID").val();
         var nombre = $("#nombre").val();
         var precio = parseFloat($("#precio").val());
-        var cantidad= $("#cantidad").val();
-        
-        
-        
-    if (ValidarTexto(nombre) && ValidarPrecio(precio)) {
-        
-        var htmlTags='';
+        var cantidad = $("#cantidad").val();
+
+
+
+        if (ValidarTexto(nombre) && ValidarPrecio(precio)) {
+
+            var htmlTags = '';
             htmlTags = '<tr>'
             htmlTags = htmlTags +
                 '<td>' + cont + '</td>' +
@@ -101,36 +101,32 @@ $(function() {
     })
 });
 
-function readTxt(usuario,contrasena){
-    file="./usuarios.txt"
+function readTxt(usuario, contrasena) {
+    file = "./BD/usuarios.txt"
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
                 var allText = rawFile.responseText;
                 var usuarios = allText.split("/")
                 console.log(usuarios)
                 var es_usuario = false
-                for (var i=0; i < usuarios.length; i++) {
+                for (var i = 0; i < usuarios.length; i++) {
                     var usuario_temporal = usuarios[i].split("-")
                     var nombre_usuario_temporal = usuario_temporal[0]
                     var contrasena_usuario_temporal = usuario_temporal[1]
                     console.log(nombre_usuario_temporal)
-                    if (nombre_usuario_temporal==usuario.value && contrasena_usuario_temporal==contrasena.value){
-                        es_usuario=true
+                    if (nombre_usuario_temporal == usuario.value && contrasena_usuario_temporal == contrasena.value) {
+                        es_usuario = true
                     }
                 }
-                if(es_usuario){
+                if (es_usuario) {
                     alert("Welcome to CUBO.")
                     window.location = "home.html";
-                }else{
+                } else {
                     alert("You have entered the wrong username and/or password, try again.")
                 }
-                
             }
         }
     }
@@ -141,14 +137,14 @@ function readTxt(usuario,contrasena){
 function abrirRedSocial() {
     var redSocial = "https://instagram.com/ortizcardona27?igshid=ZDdkNTZiNTM= "
     alert("Welcome to our instagram, here you can contact us and we will give you a username and password.");
-     window.location = redSocial;    
-}x
+    window.location = redSocial;
+} 
 
-$("#boton").click(function (e) { 
-    var ms="";
-    ms=generarRegsitro();
+$("#boton").click(function (e) {
+    var ms = "";
+    ms = generarRegsitro();
     $("mensaje").val(ms);
 });
 
 
-    
+
