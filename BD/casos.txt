@@ -1,4 +1,4 @@
-#|Asunto|Cliente|Estado|Fecha creación|Fecha cierre|Encargado
-1|Problema con impresión|Tigo|Asignado|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Joham Hernández
-2|Problema con minutos|Tigo|Cerrado|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Sebastian Ortiz
-3|Problema con llamadas|Tigo|En Proceso|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Marco 
+Case Number|Affair|Customer|State|Creation Date|Closing Date|In Charge
+1|Problem with printing|Tigo|Asigned|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Joham Hernández
+2|Problem with minutes|Tigo|Closed|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Sebastian Ortiz
+3|Problem with calls|Tigo|In progress|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Marco 

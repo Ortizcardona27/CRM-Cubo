@@ -14,7 +14,7 @@ function RegisterCase(subject, caseType, name, phone, email) {
         
         alert("the case was successfully registered")
         window.location = "home.html";
-        console.log('Archivo guardado correctamente.');
+        console.log('File saved correctly.');
     });
 }
 */
@@ -29,27 +29,29 @@ for (let i = 0; i < 7; i++) {
 }
 
 const cells = document.querySelectorAll(".cell"); // Obtiene todos los elementos div con clase "cell"
-
 const file = "./BD/casos.txt"
 const rawFile = new XMLHttpRequest();
 rawFile.open("GET", file, false);
 rawFile.onload = function () {
     var allText = rawFile.responseText;
+    table = document.getElementById("tableCases");
     var allLine = allText.split("\n");
     //console.log(allLine);
 
     for (let i = 0; i < allLine.length; i++) {
 
         var lineCase = allLine[i].split("|");
-
+        let tr = table.insertRow();
         for (let j = 0; j < lineCase.length; j++) {
             //const cellIndex = j; // Calcula el índice de la celda correspondiente
             const cell = cells[j];
             cell.textContent = lineCase[j].trim();
             console.log(lineCase.length);
+            let td = tr.insertCell();
+            td.innerHTML = cell.textContent;
             if (j === lineCase.length - 1) {
                 cell.innerHTML = '<input type="button" value="Edit" onclick="location.href=\'editCase.html\'">';   
-            }
+            } 
         }
         console.log(lineCase);
     }

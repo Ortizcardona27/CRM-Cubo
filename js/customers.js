@@ -22,7 +22,7 @@ function RegisterCase(subject, caseType, name, phone, email) {
 const gridContainer = document.getElementById("grid-container-customers");
 
 // Crea 9 elementos div para cada celda del grid
-for (let i = 0; i < 7; i++) {
+for (let i = 0; i < 9; i++) {
     const cell = document.createElement("div");
     cell.classList.add("cell"); // Agrega una clase para estilos adicionales
     gridContainer.appendChild(cell);
@@ -35,18 +35,22 @@ const rawFile = new XMLHttpRequest();
 rawFile.open("GET", file, false);
 rawFile.onload = function () {
     var allText = rawFile.responseText;
+    table = document.getElementById("tableCustomers");
     var allLine = allText.split("\n");
     //console.log(allLine);
 
     for (let i = 0; i < allLine.length; i++) {
 
         var lineCase = allLine[i].split("|");
-
+        let tr = table.insertRow();
+        
         for (let j = 0; j < lineCase.length; j++) {
             //const cellIndex = j; // Calcula el índice de la celda correspondiente
             const cell = cells[j];
             cell.textContent = lineCase[j].trim();
             console.log(lineCase[j]);
+            let td = tr.insertCell();
+            td.innerHTML = cell.textContent;
         }
         console.log(lineCase);
     }

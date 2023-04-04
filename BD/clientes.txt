@@ -1,4 +1,4 @@
-Cédula|Tipo documento|Nombre|Apellidos|Ciudad|País|Teléfono|Correo|Dirección
-1152714661|Cédula|Joham|Hernández León|Medellín|Colombia|3022900632|argos@argos.com.co|cr. 93 A # 77 C 55
-115271483|NIT|Carbones||Manizalez|Colombia|3022900456|carbones@carbones.com.co|cr. 102 B # 77 C 55
-1152714623|RUT|EPM||Medellín|Colombia|3022230632|epm@epm.org.co|cr. 23 # 437 A 55
+ID|Document Type|Name|Last Name|City|Country|Phone|E-mail|Address
+1152714661|Cédula|Joham|Hernández León|Medellín|Colombia|3022900632|joham@gmail.com|cr. 93 A #77 C 55
+115271483|Cédula|Sebastian|Ortiz Cardona|Bogotá|Colombia|3022900456|sebastian@gmail.com|cr. 102 B #77 C 55
+1152714623|Cédula|Marco||Medellín|Colombia|3022230632|marco@gmail.com|cr. 23 #437 A 55
