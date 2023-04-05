@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case List | Cubo</title>
+    <title>Edit Case | Cubo</title>
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -46,18 +46,19 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="cases.html">Cases</a>
+                                    <a class="nav-link" href="cases.html">Cases</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="register.html">Register</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="customers.html">Customers</a>
+                                    <a class="nav-link active" href="customers.html">Customers</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="my_profile.html">My Profile</a>
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </nav>
@@ -65,13 +66,66 @@
         </div>
     </header>
 
-    <div class="contenido-principal">
-        <h1 class="centrar-texto-List-Cases">CASE LIST</h1>
+    <div class="contenido-edit-case">
+        <h1 class="centrar-texto-List-Cases">EDIT CUSTOMER</h1>
+        <div class="container-edit-case">
 
-        <table id="tableCases"></table>
+            <form action="" id="formulario">
+                <div class="row">
+                    <div class="col">
+                        <label for="caseNumber">Case number</label>
+                        <input type="text" class="form1" id="caseNumber" maxlength="60">
+                    </div>
+
+                    <div class="col">
+                        <label for="subjectEdit">Subject</label>
+                        <input type="text" class="form1" id="subjectEdit" maxlength="60">
+                    </div>
+                </div>
+
+                <p></p>
+                <p></p>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="customer">Customer</label>
+                        <input type="text" class="form1" id="customer">
+                    </div>
+
+                    <div class="col">
+                        <label for="state">State</label>
+                        <select id="state" class="form1">
+                            <option></option>
+                            <option>Assigned</option>
+                            <option>Closed</option>
+                            <option>In progress</option>
+                        </select>
+                    </div>
+                </div>
+                <p></p>
+                <p></p>
+                <div class="row">
+                    <div class="col">
+                        <label for="description">Description</label>
+                        <input type="phone" class="form1" id="description" maxlength="10">
+                    </div>
+
+                    <div class="col">
+                        <label for="attendant">Attendant</label>
+                        <input type="text" class="form1" id="attendant">
+                    </div>
+                </div>
+                <p></p>
+                <p></p>
+                <button style="margin-top: 80px;" onclick="RegisterCase(document.getElementById('caseNumber'),document.getElementById('subjectEdit'),
+                document.getElementById('customer'),document.getElementById('state'),document.getElementById('description'),
+                document.getElementById('attendant'))" type="button" class="button-cases-form" id="ingresar">
+                    SEND</button>
+            </form>
+        </div>
     </div>
 
-    <script src="js/cases.js"></script>
+    <script src=".js/customers.js"></script>
 </body>
 <footer class="footer">
     <div class="contenedor">

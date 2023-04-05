@@ -19,16 +19,16 @@ function RegisterCase(subject, caseType, name, phone, email) {
 }
 */
 
-const gridContainer = document.getElementById("grid-container-customers");
+//const gridContainer = document.getElementById("grid-container-customers");
 
 // Crea 9 elementos div para cada celda del grid
-for (let i = 0; i < 9; i++) {
+/*for (let i = 0; i < 9; i++) {
     const cell = document.createElement("div");
     cell.classList.add("cell"); // Agrega una clase para estilos adicionales
     gridContainer.appendChild(cell);
-}
+}*/
 
-const cells = document.querySelectorAll(".cell"); // Obtiene todos los elementos div con clase "cell"
+//const cells = document.querySelectorAll(".cell"); // Obtiene todos los elementos div con clase "cell"
 
 const file = "./BD/clientes.txt"
 const rawFile = new XMLHttpRequest();
@@ -43,15 +43,21 @@ rawFile.onload = function () {
 
         var lineCase = allLine[i].split("|");
         let tr = table.insertRow();
-        
+
         for (let j = 0; j < lineCase.length; j++) {
             //const cellIndex = j; // Calcula el índice de la celda correspondiente
-            const cell = cells[j];
-            cell.textContent = lineCase[j].trim();
+            //const cell = cells[j];
+            //cell.textContent = lineCase[j].trim();
             console.log(lineCase[j]);
             let td = tr.insertCell();
-            td.innerHTML = cell.textContent;
+            td.innerHTML = lineCase[j].trim();
         }
+
+        if (i != 0) {
+            td = tr.insertCell();
+            td.innerHTML = '<input type="button" value="Edit" onclick="location.href=\'editCustomers.html\'">';
+        } 
+
         console.log(lineCase);
     }
 }

@@ -569,21 +569,4 @@ label {
     float: inline-start;
   }
 
-  #grid-container {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 10px;
-  }
-
-  #grid-container-customers {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    gap: 10px;
-  }
-
-  .cell {
-    background-color: white;
-    border: 1px solid black;
-  }
+ 
