@@ -73,12 +73,12 @@
             <form action="" id="formulario">
                 <div class="row">
                     <div class="col">
-                        <label for="caseNumber">Case number</label>
+                        <label for="caseNumber">Identification Document</label>
                         <input type="text" class="form1" id="caseNumber" maxlength="60">
                     </div>
 
                     <div class="col">
-                        <label for="subjectEdit">Subject</label>
+                        <label for="subjectEdit">Document Type</label>
                         <input type="text" class="form1" id="subjectEdit" maxlength="60">
                     </div>
                 </div>
@@ -88,35 +88,50 @@
 
                 <div class="row">
                     <div class="col">
-                        <label for="customer">Customer</label>
+                        <label for="customer">Name</label>
                         <input type="text" class="form1" id="customer">
                     </div>
 
                     <div class="col">
-                        <label for="state">State</label>
-                        <select id="state" class="form1">
-                            <option></option>
-                            <option>Assigned</option>
-                            <option>Closed</option>
-                            <option>In progress</option>
-                        </select>
+                        <label for="state">Last Name</label>
+                        <input type="text" class="form1" id="customer">
                     </div>
                 </div>
                 <p></p>
                 <p></p>
                 <div class="row">
                     <div class="col">
-                        <label for="description">Description</label>
+                        <label for="description">City</label>
                         <input type="phone" class="form1" id="description" maxlength="10">
                     </div>
 
                     <div class="col">
-                        <label for="attendant">Attendant</label>
+                        <label for="attendant">Country</label>
                         <input type="text" class="form1" id="attendant">
                     </div>
                 </div>
                 <p></p>
                 <p></p>
+                <div class="row">
+                    <div class="col">
+                        <label for="description">Phone</label>
+                        <input type="phone" class="form1" id="description" maxlength="10">
+                    </div>
+
+                    <div class="col">
+                        <label for="attendant">E-mail</label>
+                        <input type="text" class="form1" id="attendant">
+                    </div>
+                </div>
+                <p></p>
+                <p></p>
+                <div class="row">
+                    <div class="col">
+                        <label for="description">Address</label>
+                        <input type="phone" class="form1" id="description" maxlength="10">
+                    </div>
+                </div>
+
                 <button style="margin-top: 80px;" onclick="RegisterCase(document.getElementById('caseNumber'),document.getElementById('subjectEdit'),
                 document.getElementById('customer'),document.getElementById('state'),document.getElementById('description'),
                 document.getElementById('attendant'))" type="button" class="button-cases-form" id="ingresar">
