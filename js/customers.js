@@ -43,19 +43,20 @@ rawFile.onload = function () {
 
         var lineCase = allLine[i].split("|");
         let tr = table.insertRow();
+        let td = tr.insertCell();
 
         for (let j = 0; j < lineCase.length; j++) {
             //const cellIndex = j; // Calcula el índice de la celda correspondiente
             //const cell = cells[j];
             //cell.textContent = lineCase[j].trim();
             console.log(lineCase[j]);
-            let td = tr.insertCell();
+            td = tr.insertCell();
             td.innerHTML = lineCase[j].trim();
         }
 
         if (i != 0) {
             td = tr.insertCell();
-            td.innerHTML = '<input type="button" value="Edit" onclick="location.href=\'editCustomers.html\'">';
+            td.innerHTML = `<input type="button" value="Edit" onclick= "Editar('${lineCase}')">`;
         } 
 
         console.log(lineCase);
@@ -63,5 +64,35 @@ rawFile.onload = function () {
 }
 rawFile.send(null);
 
+function Editar(row) {
+
+    var rowByArray = row.split(",");
+    var params = new URLSearchParams();
+    
+    params.append("identificationDocument", rowByArray[0]);
+    params.append("documentType", rowByArray[1]);
+    params.append("nameCustomer", rowByArray[2]);
+    params.append("lastName", rowByArray[3]);
+    params.append("city", rowByArray[4]);
+    params.append("country", rowByArray[5]);
+    params.append("phone", rowByArray[6]);
+    params.append("email", rowByArray[7]);
+    params.append("address", rowByArray[8]);
+    
+    var url = "editCustomers.html?";
+    url += params.toString();
+    window.location.href = url;
+}
+
+
+document.getElementById("identificationDocument").value = identificationDocument;
+document.getElementById("documentType").value = documentType;
+document.getElementById("nameCustomer").value = nameCustomer;
+document.getElementById("lastName").value = lastName;
+document.getElementById("city").value = city;
+document.getElementById("country").value = country;
+document.getElementById("phone").value = phone;
+document.getElementById("email").value = email;
+document.getElementById("address").value = address;
     //const randomNumber = Math.floor(Math.random() * 9) + 1; // Genera un número aleatorio entre 1 y 9
     //cell.textContent = randomNumber; // Asigna el número como contenido del div

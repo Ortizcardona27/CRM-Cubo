@@ -1,4 +1,4 @@
-Case Number|Affair|Customer|State|Creation Date|Closing Date|In Charge
-1|Problem with printing|Tigo|Asigned|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Joham Hernández
-2|Problem with minutes|Tigo|Closed|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Sebastian Ortiz
-3|Problem with calls|Tigo|In progress|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Marco 
+Case Number|Affair|Customer|State|Creation Date|Closing Date|In Charge|Description
+1|Problem with printing|Tigo|Asigned|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Joham Hernández|It is not printing the documents that are generated
+2|Problem with minutes|Tigo|Closed|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Sebastian Ortiz|I have problems with my minutes it is telling me that I have not paid anything and if I did
+3|Problem with calls|Tigo|In progress|2023-03-02 12:00:00 pm|2023-03-03 11:00:00 pm|Marco|It is not letting me make calls to any operator

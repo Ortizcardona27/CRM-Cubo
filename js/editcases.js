@@ -6,9 +6,10 @@ var affair = urlParams.get("Affair");
 var customer = urlParams.get("Customer");
 var state = urlParams.get("State");
 var attendant = urlParams.get("Attendant");
+var description = urlParams.get("description");
 
 document.getElementById("caseNumber").value = caseNumber;
-document.getElementById("description").value = affair;
+document.getElementById("description").value = description;
 document.getElementById("customer").value = customer;
 document.getElementById("state").value = state;
 document.getElementById("attendant").value = attendant;

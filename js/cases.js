@@ -48,6 +48,7 @@ function Editar(row) {
     params.append("Customer", rowByArray[2]);
     params.append("State", rowByArray[3]);
     params.append("Attendant", rowByArray[6]);
+    params.append("description", rowByArray[7]);
     
     var url = "editCase.html?";
     url += params.toString();
