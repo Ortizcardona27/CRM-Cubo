@@ -16,6 +16,6 @@ DOCUMENTATION:
 https://docs.google.com/document/d/1rqo1stdzDzAqA0ccVWRK1613zFq4nI0h/edit
 
 AUTHORS:
-Joham Hernandez Leon
-Sebastian Ortiz Cardona
+Joham Hernandez Leon,
+Sebastian Ortiz Cardona,
 Marco Antonio Mesa
